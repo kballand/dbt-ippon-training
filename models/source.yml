@@ -13,27 +13,27 @@ sources:
             tests:
               - unique
               - not_null
-          
+
           - name: name
             description: This is the name of the restaurant
             tests:
               - not_null
-          
+
           - name: address
             description: This is the address of the restaurant
             tests:
               - not_null
-          
+
           - name: nb_employees
             description: This is the number of employees in the restaurant
             tests:
               - not_null
-          
+
           - name: open_on_sunday
             description: This indicates whether the restaurant is open on sundays or not
             tests:
               - not_null
-        
+
       - name: orders
         description: This is the source table for orders
         columns:
@@ -42,7 +42,7 @@ sources:
             tests:
               - unique
               - not_null
-          
+
           - name: restaurant_identifier
             description: This is a unique identifier for the restaurant where the order has been made
             tests:
@@ -50,14 +50,14 @@ sources:
               - relationships:
                   to: source('snowflake', 'restaurants')
                   field: identifier
-          
+
           - name: payment_method
             description: This is the payment method used to pay the order
             tests:
               - not_null
               - accepted_values:
-                  values: ['cash', 'card', 'meal_ticket', 'cheque']
-          
+                  values: ["cash", "card", "meal_ticket", "cheque"]
+
           - name: amount
             description: This is the amount of the order
             tests:
