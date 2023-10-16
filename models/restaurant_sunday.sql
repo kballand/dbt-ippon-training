@@ -1,0 +1,1 @@
+SELECT * FROM {{ ref('restaurants') }} WHERE open_on_sundays = TRUE
