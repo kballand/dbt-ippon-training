@@ -41,6 +41,7 @@ seeds:
         name: STRING
         address: STRING
         nb_employees: INT
+        open_on_sundays: BOOLEAN
 
 
 
