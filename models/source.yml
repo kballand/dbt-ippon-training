@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: snowflake
+    schema: source
+
+    tables:
+      - name: restaurants
+      - name: orders

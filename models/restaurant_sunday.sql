@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('restaurants') }} WHERE open_on_sundays = TRUE
+SELECT * FROM {{ source('snowflake', 'restaurants') }} WHERE open_on_sunday::boolean = TRUE

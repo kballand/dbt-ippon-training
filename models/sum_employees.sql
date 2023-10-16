@@ -1,1 +1,1 @@
-SELECT sum(nb_employees) AS total_employees FROM {{ ref('restaurants') }}
+SELECT sum(nb_employees) AS total_employees FROM {{ source('snowflake', 'restaurants') }}
