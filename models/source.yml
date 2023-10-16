@@ -6,4 +6,7 @@ sources:
 
     tables:
       - name: restaurants
+        description: This is the source table for restaurants
+      
       - name: orders
+        description: This is the source table for orders

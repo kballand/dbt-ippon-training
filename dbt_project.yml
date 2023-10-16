@@ -35,16 +35,3 @@ models:
 
     staging:
       +materialized: ephemeral
-
-seeds:
-  dbt_ippon_training:
-    restaurants:
-      +column_types:
-        identifier: BIGINT
-        name: STRING
-        address: STRING
-        nb_employees: INT
-        open_on_sundays: BOOLEAN
-
-
-
