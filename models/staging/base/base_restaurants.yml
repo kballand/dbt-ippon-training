@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: base_restaurants
+    description: This table contains the raw data for the restaurants
+
+    columns:
+      - name: identifier
+        description: This is a unique identifier for the restaurant
+      
+      - name: name
+        description: This is the name of the restaurant
+      
+      - name: address
+        description: This is the address of the restaurant
+      
+      - name: nb_employees
+        description: This is the number of employees in the restaurant
+      
+      - name: open_on_sunday
+        description: This indicates whether the restaurant is open on sundays or not
