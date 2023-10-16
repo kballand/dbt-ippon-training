@@ -16,6 +16,6 @@ models:
       
       - name: amount
         description: This is the amount of the order
-      
+
       - name: created_at
         description: This is the creation date of the order
