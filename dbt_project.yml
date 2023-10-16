@@ -32,3 +32,15 @@ models:
   dbt_ippon_training:
     # Config indicated by + and applies to all files under models/
     +materialized: table
+
+seeds:
+  dbt_ippon_training:
+    restaurants:
+      +column_types:
+        identifier: BIGINT
+        name: STRING
+        address: STRING
+        nb_employees: INT
+
+
+
