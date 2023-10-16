@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: base_fuzzy_orders
+    description: This table contains the raw data for the fuzzy orders
+
+    columns:
+      - name: dishes_names
+        description: This is the name of the dishes in the fuzzy order
+
+      - name: payment_method
+        description: This is the payment method used to pay the fuzzy order
+
+      - name: amount
+        description: This is the amount of the fuzzy order
+
+      - name: created_at
+        description: This is the creation date of the fuzzy order
