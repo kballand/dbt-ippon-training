@@ -1,3 +1,5 @@
+{{ config(materialized = "table") }}
+
 WITH first_row AS (
     SELECT
         identifier,

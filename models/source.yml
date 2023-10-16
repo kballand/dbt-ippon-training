@@ -67,3 +67,59 @@ sources:
             description: This is the creation date of the order
             tests:
               - not_null
+      
+      - name: dishes
+        description: This is the source table for dishes
+        columns:
+          - name: identifier
+            description: This is the unique identifier of the dish
+            tests:
+              - unique
+              - not_null
+          
+          - name: name
+            description: This is the name of the dish
+            tests:
+              - not_null
+          
+          - name: selling_price
+            description: This is the price of the dish
+            tests:
+              - not_null
+          
+          - name: production_cost
+            description: This is the production cost of the dish
+            tests:
+              - not_null
+          
+          - name: type
+            description: This is the type of the dish
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['entree', 'plat', 'dessert', 'boisson']
+
+      - name: fuzzy_orders
+        description: This is the source table for fuzzy orders
+        columns:
+          - name: dishes_names
+            description: This is the name of the dishes in the fuzzy order
+            tests:
+              - not_null
+
+          - name: payment_method
+            description: This is the payment method used to pay the fuzzy order
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["cash", "card", "meal_ticket", "cheque"]
+
+          - name: amount
+            description: This is the amount of the fuzzy order
+            tests:
+              - not_null
+
+          - name: created_at
+            description: This is the creation date of the fuzzy order
+            tests:
+              - not_null
