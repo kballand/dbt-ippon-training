@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_fuzzy_orders__flattened
+    description: This table contains the flattened fuzzy orders
+
+    columns:
+      - name: identifier
+        description: The unique identifier for the fuzzy order.
+      
+      - name: dish_name
+        description: This is the name of the dish for the fuzzy order
+
+      - name: payment_method
+        description: This is the payment method used to pay the fuzzy order
+
+      - name: amount
+        description: This is the amount of the fuzzy order
+
+      - name: created_at
+        description: This is the creation date of the fuzzy order

@@ -1,5 +1,5 @@
 SELECT
-    dishes_names,
+    parse_json(dishes_names)::array as dishes_names,
     payment_method,
     amount,
     created_at
