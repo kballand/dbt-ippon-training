@@ -33,6 +33,9 @@ models:
     # Config indicated by + and applies to all files under models/
     +materialized: table
 
+    staging:
+      +materialized: ephemeral
+
 seeds:
   dbt_ippon_training:
     restaurants:
