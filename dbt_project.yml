@@ -35,3 +35,6 @@ models:
 
     staging:
       +materialized: ephemeral
+
+vars:
+  nb_restaurants_to_show: 3
