@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_restaurants__turnover
+    description: This table contains the turnover per restaurant
+
+    columns:
+      - name: restaurant_identifier
+        description: This is a unique identifier for the restaurant
+      
+      - name: restaurant_name
+        description: This is the name of the restaurant
+      
+      - name: turnover
+        description: This is the turnover of the restaurant

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: base_dishes
+    description: This table contains the raw data for the dishes
+
+    columns:
+      - name: identifier
+        description: This is the unique identifier of the dish
+      
+      - name: name
+        description: This is the name of the dish
+      
+      - name: selling_price
+        description: This is the price of the dish
+      
+      - name: production_cost
+        description: This is the production cost of the dish
+      
+      - name: type
+        description: This is the type of the dish

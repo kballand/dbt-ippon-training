@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: restaurants__turnover_ordered
+    description: This table contains the turnover per restaurant ordered by descending order
+
+    columns:
+      - name: restaurant_identifier
+        description: This is a unique identifier for the restaurant
+        tests:
+          - unique
+          - not_null
+      
+      - name: restaurant_name
+        description: This is the name of the restaurant
+        tests:
+          - not_null
+      
+      - name: turnover
+        description: This is the turnover of the restaurant
+        tests:
+          - not_null
+    
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('expect_restaurant_turnover')
+          tags: ['unit_testing']

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: base_orders
+    description: This table contains the raw data for the orders
+
+    columns:
+      - name: identifier
+        description: This is a unique identifier for the order
+      
+      - name: restaurant_identifier
+        description: This is a unique identifier for the restaurant where the order has been made
+      
+      - name: payment_method
+        description: This is the payment method used to pay the order
+      
+      - name: amount
+        description: This is the amount of the order
+
+      - name: created_at
+        description: This is the creation date of the order
