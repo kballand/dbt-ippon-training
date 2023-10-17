@@ -38,3 +38,8 @@ models:
 
 vars:
   nb_restaurants_to_show: 3
+
+seeds:
+  dbt_ippon_training:
+    samples:
+      schema: sample
