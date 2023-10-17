@@ -20,3 +20,8 @@ models:
         description: This is the turnover of the restaurant
         tests:
           - not_null
+    
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('expect_restaurant_turnover')
+          tags: ['unit_testing']

@@ -43,3 +43,6 @@ seeds:
   dbt_ippon_training:
     samples:
       schema: sample
+    
+    expects:
+      schema: expect
