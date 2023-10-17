@@ -8,7 +8,7 @@ WITH first_row AS (
         amount,
         created_at,
         ROW_NUMBER() OVER (PARTITION BY identifier ORDER BY created_at DESC) AS row_nb
-    FROM {{ source('snowflake', 'orders') }}
+    FROM {{ mockable_source('orders') }}
 )
 SELECT
     identifier,
